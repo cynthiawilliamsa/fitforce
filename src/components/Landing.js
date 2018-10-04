@@ -8,7 +8,6 @@ class Landing extends Component {
     return (
       <div className="App">
         <div className="main"> 
-            <MenuAppBar/>            
             <div className="container">                
                 <img alt="FitForceBanner" 
                     src={Fitforcebannersm}                                                
