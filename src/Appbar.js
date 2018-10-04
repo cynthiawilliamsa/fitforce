@@ -7,11 +7,12 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import Switch from '@material-ui/core/Switch';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+
 
 const styles = {
   root: {
@@ -52,26 +53,28 @@ class MenuAppBar extends React.Component {
     return (
       <div className={classes.root}>
         <FormGroup>
-          <FormControlLabel
+          {/* <FormControlLabel
             control={
               <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
             }
             label={auth ? 'Logout' : 'Login'}
-          />
+          /> */}
         </FormGroup>
-        <AppBar position="static">
+        <AppBar position="static" style={{background: "white", color: "#000046"}}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
             </IconButton>
             <Typography variant="title" color="inherit" className={classes.grow}>
-              Photos
+            
             </Typography>
             <div className = "navLinks">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Testimonials</a>
-            </div>
+                <a href="#">Home</a>
+                <a href="#">About</a>            
+                <a href="#">Services</a>           
+                <a href="#">Testimonials</a> 
+                <a href="#">Contact</a>   
+                </div>
             {auth && (
               <div>
                 <IconButton
