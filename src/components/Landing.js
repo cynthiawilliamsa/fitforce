@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MenuAppBar from "../Appbar";
 import Fitforcebannersm from "./Fitforcebannersm.png";
 import landingimg3 from "./landingimg3.jpeg";
 
@@ -14,8 +13,8 @@ class Landing extends Component {
                     />
                 <div className="landing-img">
                     <img alt="Girl on TRX"
-                        src={landingimg3}
-                        style={{width:'657px'}}                  
+                        src={landingimg3} 
+                                                         
                     />
                     <h2 className="landing-header">Reaching your Fitness Goals....</h2>
                     <button className="landing-button">Free Consultation</button>

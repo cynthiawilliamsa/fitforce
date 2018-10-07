@@ -1,56 +1,39 @@
-.main {
+/*Mobile*/
 
-  background: #56ab2f;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-}
-
-.container {
-  /*background:#0f0c29;  /* fallback for old browsers */
-  /*background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to top, #24243e, #302b63, #0f0c29); */
+.container {  
   background: #000046;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-  height: auto;
-  width: 75%; 
+  height: 600px;
+  width: 100%; 
   margin: auto;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 8;
   
 }
-
-.container img {
+.container img { 
+  background: url("./components/fitforce3.png");
   display: block;
   margin-left: auto;
   margin-right: auto;
 }  
 
+.landing-img img {
+  display: none;
+}
+
 .navLinks a {  
-  color: #000046;
-  padding: 20px; 
-  text-decoration: none; 
+  display: none;
 }
-.landing-img {
-  position: relative;
-}
-.landing-img img{ 
-  display: block;   
-  opacity: .5;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
- }
 /*wanting a fade in effect for header and text*/
 .landing-header {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
   font-family: Roboto 700i, "sans serif";
-  font-size: 30px;
+  font-size: 22px;
   color:white;
-  position: absolute;
-  top: 8px;
-  left: 200px; 
+
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -82,9 +65,10 @@
 }
 
 .landing-button {
-  position: absolute; 
-  top: 120px;
-  left: 420px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   height: 60px;
   width: 200px;
   border-radius: 5px;
@@ -101,13 +85,16 @@
   
 }
 .landing-text {
-  position: absolute;
+  position: relative;
   font-family: Roboto 400, "sans serif";
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
-  bottom:20px;
-  right: 200px; 
+  text-align: right;
+  padding-top: 5%;
+  padding-right: 5%; 
+ 
+  
             animation-delay: 3s;
             webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
             -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -137,3 +124,35 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  .main {
+    height: 555px;
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .container {  
+    height: 546px;
+    width: 657px; 
+    margin: auto;  
+}
+.landing-img img {
+  display: block;
+  position: absolute;
+  width: 657px;
+  opacity: .5;  
+}
+.navLinks a {  
+  display: initial;
+  color: #000046;
+  padding: 20px; 
+  text-decoration: none; 
+}
+
+}
+
+
+
+

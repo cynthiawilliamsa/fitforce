@@ -12,7 +12,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-
+import { Link } from 'react-router-dom'
 
 const styles = {
   root: {
@@ -69,22 +69,23 @@ class MenuAppBar extends React.Component {
             
             </Typography>
             <div className = "navLinks">
-                <a href="#">Home</a>
-                <a href="#">About</a>            
-                <a href="#">Services</a>           
-                <a href="#">Testimonials</a> 
-                <a href="#">Contact</a>   
+                <Link to ="/">Home</Link>
+                <a href="/About">About</a>            
+                <a href="/Services">Services</a>           
+                <a href="/Testimonials">Testimonials</a> 
+                <a href="/Contact">Contact</a>   
                 </div>
             {auth && (
               <div>
-                <IconButton
+                {/*login section for later development*/}
+                {/* <IconButton
                   aria-owns={open ? 'menu-appbar' : null}
                   aria-haspopup="true"
                   onClick={this.handleMenu}
                   color="inherit"
                 >
                     <AccountCircle />
-                </IconButton>
+                </IconButton> */}
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorEl}
