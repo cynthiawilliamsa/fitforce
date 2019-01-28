@@ -60,7 +60,7 @@ class MenuAppBar extends React.Component {
             label={auth ? 'Logout' : 'Login'}
           /> */}
         </FormGroup>
-        <AppBar position="static" style={{background: "white", color: "#000046"}}>
+          <AppBar position="static" style={{background: "white", color: "#000046"}}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />

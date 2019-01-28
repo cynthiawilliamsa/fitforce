@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Fitforcebannersm from "./Fitforcebannersm.png";
-import landingimg3 from "./landingimg3.jpeg";
+
       
       class About extends Component {
         render() {
