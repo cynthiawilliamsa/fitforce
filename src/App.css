@@ -1,4 +1,183 @@
-.navLinks a {
-  color: white;
-  padding: 20px;  
+/*Mobile*/
+
+.container {  
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
+  width: 100%; 
+  margin: auto;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 8;
+  
 }
+.container img { 
+  background: url("./components/fitforce3.png");
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+.landing-img img {
+  display: none;
+}
+
+.navLinks a {  
+  display: none;
+}
+/*wanting a fade in effect for header and text*/
+.landing-header {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  font-family: Roboto 700i, "sans serif";
+  font-size: 22px;
+  color:white;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.landing-button {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  background: #56ab2f;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  opacity: .2px;
+}
+.landing-button:hover {
+  background: white;
+  color: #56aB2f;
+  font-style: bold;
+  
+}
+.landing-text {
+  position: relative;
+  font-family: Roboto 400, "sans serif";
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  padding-top: 5%;
+  padding-right: 5%; 
+ 
+  
+            animation-delay: 3s;
+            webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 3s; /* Firefox < 16 */
+              -ms-animation: fadein 3s; /* Internet Explorer */
+                -o-animation: fadein 3s; /* Opera < 12.1 */
+                  animation: fadein 3s;            
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.about-content h3, p {
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: Roboto 400, "sans serif";
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.3;  
+  padding-bottom: 10px;
+}
+
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  .main {
+    height: auto;
+    padding-bottom: 2px;
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .container {  
+    height: auto;
+    width: 657px; 
+    margin: auto;  
+}
+.landing-img img {
+  display: block;
+  position: absolute;
+  width: 657px;
+  opacity: .5;  
+}
+.navLinks a {  
+  display: initial;
+  color: #000046;
+  padding: 20px; 
+  text-decoration: none; 
+}
+
+.about-content p {
+  font-size: 16px;  
+  padding-bottom: 10px;
+}
+
+.about-content h3 {
+  font-size: 22px;
+}
+
+
+}
+
+
+
+

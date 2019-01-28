@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 
-class Testimonials extends Component {
+class Contact extends Component {
   render() {
     return (
       <div className="App">
-        Testimonials
+        Contact
       </div>
     );
   }
 }
 
-export default Testimonials;
+export default Contact;
