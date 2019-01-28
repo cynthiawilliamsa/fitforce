@@ -5,10 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-// import Switch from '@material-ui/core/Switch';
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
+import MenuIcon from '@material-ui/icons/Menu'
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
@@ -53,12 +50,6 @@ class MenuAppBar extends React.Component {
     return (
       <div className={classes.root}>
         <FormGroup>
-          {/* <FormControlLabel
-            control={
-              <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
-            }
-            label={auth ? 'Logout' : 'Login'}
-          /> */}
         </FormGroup>
           <AppBar position="static" style={{background: "white", color: "#000046"}}>
           <Toolbar>
@@ -76,16 +67,7 @@ class MenuAppBar extends React.Component {
                 <a href="/Contact">Contact</a>   
                 </div>
             {auth && (
-              <div>
-                {/*login section for later development*/}
-                {/* <IconButton
-                  aria-owns={open ? 'menu-appbar' : null}
-                  aria-haspopup="true"
-                  onClick={this.handleMenu}
-                  color="inherit"
-                >
-                    <AccountCircle />
-                </IconButton> */}
+              <div>                
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorEl}
